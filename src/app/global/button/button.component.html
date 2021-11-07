@@ -1,0 +1,12 @@
+<ng-container *ngIf="buttonOptions && buttonOptions.type.pictured as pb">
+    <div class="buttonWrapper">
+        <div id="pictured_div" (click)="redirect(buttonOptions.href)">
+            <img id="pictured_img" [src]="pb.path">
+            <span [style.font-size]="pb.content?.fontSize ? pb.content?.fontSize : ''" id="pictured_span">{{pb.content ?
+                pb.content.text : ''}}</span>
+        </div>
+        <span class="buttonDesc">
+            11 wins | 55 losses
+        </span>
+    </div>
+</ng-container>

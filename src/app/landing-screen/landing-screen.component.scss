@@ -1,0 +1,92 @@
+app-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+app-burgermenu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+app-fragment-count {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.upper_wrapper {
+    background-image: url("/assets/landing/barkfighter_landing_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.character {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.character img {
+    height: 100%;
+}
+
+.lower_wrapper {
+    width: 100vw;
+    position: absolute;
+    bottom: 80px
+}
+
+.black_gradient_bar {
+    position: relative;
+    background: transparent linear-gradient(270deg, #171a1c 0%, #212128 49%, #171a1c 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+}
+
+.black_gradient_bar_overflow {
+    height: 100%;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.buttonWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+app-button {
+    width: 175px;
+    height: auto;
+    margin-top: -60px;
+}
+
+.char_name {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-family: "Gentium Basic";
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}

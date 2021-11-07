@@ -1,0 +1,26 @@
+<app-burgermenu></app-burgermenu>
+<app-fragment-count></app-fragment-count>
+
+<div class="upper_wrapper">
+    <div class="character">
+        <img src="/assets/landing/barkfighter_ga_f.png">
+    </div>
+</div>
+<p class="char_name">
+    Roua Splinterheart
+</p>
+<p class="char_level">
+    LEVEL 12
+</p>
+<div class="lower_wrapper">
+    <div class="black_gradient_bar">
+        <div class="black_gradient_bar_overflow"></div>
+        <div class="buttonWrapper">
+            <app-button [buttonOptions]="pveButton"></app-button>
+            <app-button [buttonOptions]="pvpButton"></app-button>
+        </div>
+    </div>
+</div>
+
+<app-navbar [currentPage]="'landing'"></app-navbar>
+

@@ -1,0 +1,31 @@
+<div [ngClass]="open ? 'opened' : 'closed'">
+    <div id="burgerButton" (click)="openMenu()">
+        <svg-icon name="burgermenu"></svg-icon>
+    </div>
+    <div id="whole_screen">
+        <div id="overlay">
+            <div id="closeButton" (click)="closeMenu()">
+                <svg-icon name="close"></svg-icon>
+            </div>
+            <nav>
+                <div id="menu">
+                    <div>
+                        <span>Registrieren</span>
+                    </div>
+                    <div>
+                        <span>Login</span>
+                    </div>
+                    <div>
+                        <span>Marktplatz</span>
+                    </div>
+                    <div>
+                        <span>How To</span>
+                    </div>
+                    <div>
+                        <span>Profil</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<footer>
+    <nav>
+        <div class="navbar">
+            <div [ngClass]="getSvgClasses('landing')" (click)="redirectTo('landing')">
+                <svg-icon name="dummy1"></svg-icon>
+            </div>
+            <div [ngClass]="getSvgClasses('workshop')" (click)="redirectTo('workshop')">
+                <svg-icon name="dummy2"></svg-icon>
+            </div>
+            <div [ngClass]="getSvgClasses('dummy1')" (click)="redirectTo('dummy1')">
+                <svg-icon name="dummy3"></svg-icon>
+            </div>
+            <div [ngClass]="getSvgClasses('dummy2')" (click)="redirectTo('dummy2')">
+                <svg-icon name="dummy4"></svg-icon>
+            </div>
+        </div>
+    </nav>
+</footer>

@@ -1,0 +1,59 @@
+{
+    "iconImageFiles": [
+      {
+        "iconName": "dummy1",
+        "iconPath": "/assets/global/navbar/icon_character.svg"
+      },
+      {
+        "iconName": "dummy2",
+        "iconPath": "/assets/global/navbar/icon_collection.svg"
+      },
+      {
+        "iconName": "dummy3",
+        "iconPath": "/assets/global/navbar/icon_compact.svg"
+      },
+      {
+        "iconName": "dummy4",
+        "iconPath": "/assets/global/navbar/icon_equip.svg"
+      },
+      {
+        "iconName": "burgermenu",
+        "iconPath": "/assets/global/icon_burger.svg"
+      },
+      {
+        "iconName": "close",
+        "iconPath": "/assets/global/icon_close.svg"
+      },
+      {
+        "iconName": "equipment_slot",
+        "iconPath": "/assets/characterEditor/equipment_slot.svg"
+      },
+      {
+        "iconName": "armor",
+        "iconPath": "/assets/characterEditor/icons-gear_icon_gear-armor.svg"
+      },
+      {
+        "iconName": "hand_left",
+        "iconPath": "/assets/characterEditor/icons-gear_icon_gear-hand-left.svg"
+      },
+      {
+        "iconName": "hand_right",
+        "iconPath": "/assets/characterEditor/icons-gear_icon_gear-hand-right.svg"
+      },
+      {
+        "iconName": "head",
+        "iconPath": "/assets/characterEditor/icons-gear_icon_gear-head.svg"
+      },
+      {
+        "iconName": "trinket",
+        "iconPath": "/assets/characterEditor/icons-gear_icon_gear-trinket1.svg"
+      },
+      {
+        "iconName": "arrow_right",
+        "iconPath": "/assets/itemSlider/icon_bold-arrow_right.svg"
+      }
+    ],
+    "customIcons": []
+  }
+
+

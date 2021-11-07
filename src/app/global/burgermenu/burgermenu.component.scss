@@ -1,0 +1,48 @@
+#burgerButton {
+    width: 50px;
+    fill: #E1DCD0;
+}
+
+#closeButton {
+    width: 50px;
+    fill: #E1DCD0;
+    padding: 1rem;
+}
+
+#whole_screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+
+    background-color: #0008;
+}
+
+.opened #whole_screen {
+    display: block;
+}
+
+#overlay {
+    background: #33322F 0% 0% no-repeat padding-box;
+    width: 70%;
+    height: 100%;
+
+    #menu span {
+        color: #E0DBCE;
+        font-size: 24px;
+        font-family: 'Magra', serif;
+        font-weight: bold;
+    }
+    
+    #menu div {
+        padding: 20px 1rem;
+        border-top: 1px solid #E1DCD0;
+        &:last-child {
+            border-bottom: 1px solid #E1DCD0;
+        }
+    }
+}
+

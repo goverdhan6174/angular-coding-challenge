@@ -1,0 +1,43 @@
+.picturedButton {
+    width: 20%;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#pictured_span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50px;
+    font-family: 'Magra', serif;
+    color: #570023;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#pictured_div {
+    position: relative;
+}
+
+#pictured_img {
+    width: 100%;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .buttonDesc {
+        font-family: "Neris", serif;
+        color: #C4B494;
+        letter-spacing: 0px;
+        font-size: 14px;
+        margin-top: -10px;
+    }
+}
