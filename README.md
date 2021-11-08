@@ -22,5 +22,9 @@ You can run storybook with the command `npm run storybook`
    - The respective images of the items all contain a so-called "rarity" in the lower middle. The rarity of an item can change and has to be set dynamically. The used images can be found under the following path in the assets: `rarities/`
    - The respective images also include a so-called "damage-type" in the lower left corner. This image can be ignored and is not part of the coding-challenge
       - ![Alt text](src/assets/screenshot2.png?raw=true "Icons")
+   - The centered image is surrounded by a static border as shown on the following picture
+      ![Alt text](src/assets/screenshot3.png?raw=true "IconsBordered")
+      - While sliding through the icons, the images snap in between the bordered area
+   
 
 2. Make the itemSlider-Component responsive for all Mobile-Devices
