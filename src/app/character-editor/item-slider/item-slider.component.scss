@@ -1,6 +1,150 @@
 /* THIS COMPONENT NEEDS SOME WORK */
 
-.mySvgExample {
-    fill: black;
-    width: 40px;
+.arrow_svg {
+    fill: #c4b494;
+    width: 20px;
+    z-index: 10;
+}
+
+.gears {
+    --border-container-size: 86px;
+    --thumbnail-size: 70px;
+    --rarity-icon-size: 16px;
+    --checkbox-size: 24px;
+    --gap: 4px;
+    --thumbnail-border: #6e4f38;
+
+    background-image: url("/assets/itemSlider/bottom_bg_equipment.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    padding: 8px;
+    user-select: none;
+
+    .black_transparent_black_gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent linear-gradient(0deg, black 0%, transparent 30%, transparent 60%, black 100%) 0% 0%
+            no-repeat padding-box;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .static_numbnail_border {
+        position: absolute;
+        border: 2px solid var(--thumbnail-border);
+        width: var(--border-container-size);
+        height: var(--border-container-size);
+        border-radius: 5px;
+        margin-top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: center;
+        transition: border 300ms ease-in-out;
+    }
+
+    .gears_image_container[data-current-sword] {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: var(--gap);
+        margin-top: 10px;
+        z-index: 10;
+        transform: translateX(
+            calc(
+                50% - var(--border-container-size) / 2 - (var(--data-current-sword) * var(--border-container-size)) -
+                    (var(--data-current-sword) * var(--gap))
+            )
+        );
+        transition: transform 300ms ease-in-out;
+
+        .sword {
+            display: flex;
+            justify-content: center;
+
+            .sword_numbnail {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: var(--border-container-size);
+                height: var(--border-container-size);
+                border-radius: 5px;
+                opacity: 0.51;
+
+                &.active {
+                    border: 2px solid var(--thumbnail-border);
+                    transition: border 300ms ease-in-out;
+                }
+
+                .numbnail {
+                    height: var(--thumbnail-size);
+                    width: var(--thumbnail-size);
+                    border-radius: 2px;
+                    box-shadow: 0px 2px 5px #000000cc;
+                }
+
+                .rarity {
+                    position: absolute;
+                    height: var(--rarity-icon-size);
+                    width: var(--rarity-icon-size);
+                    left: 50%;
+                    bottom: calc((var(--border-container-size) - var(--thumbnail-size)) / 2);
+                    border-radius: 50%;
+                    transform: translate(-50%, 50%);
+                    box-shadow: 0px 2px 4px #000000;
+                }
+
+                .damage {
+                    position: absolute;
+                    height: var(--checkbox-size);
+                    width: var(--checkbox-size);
+                    right: calc((var(--border-container-size) - var(--thumbnail-size)) / 2);
+                    bottom: calc((var(--border-container-size) - var(--thumbnail-size)) / 2);
+                }
+            }
+        }
+    }
+
+    .gears_info_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        z-index: 10;
+
+        .rotate {
+            transform: rotateY(-180deg);
+            transform-origin: center;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        .name {
+            text-align: center;
+            font-family: Neris;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #c4b494;
+            padding: 0 5px;
+            border-right: 1px solid #c4b494;
+            line-height: 1.1;
+        }
+
+        .type {
+            text-align: center;
+            letter-spacing: 0px;
+            font-family: Maria;
+            font-weight: 300;
+            font-size: 14px;
+            color: #c4b494;
+            padding: 0 5px;
+        }
+    }
 }

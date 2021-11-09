@@ -1,6 +1,42 @@
 <!-- THIS COMPONENT NEEDS SOME WORK  -->
 
 <!-- This is an example on how to use the svg-icons -->
-<div class="mySvgExample">
-    <svg-icon name="arrow_right"></svg-icon>
+
+<div class="gears">
+
+    <div class="black_transparent_black_gradient"></div>
+
+    <div class="static_numbnail_border"></div>
+
+    <div class="gears_image_container" [attr.data-current-sword]='currentSword'
+        style="--data-current-sword:{{currentSword}}">
+        <div class="sword" *ngFor="let sword of swords; index as i;">
+            <div [ngClass]="{'sword_numbnail': true, 'active': currentSword === i}">
+                <img class="numbnail" src="/assets/itemSlider/items/{{sword.numbnail}}.jpg">
+                <img class="rarity" src="/assets/itemSlider/rarities/{{sword.rarity}}.png">
+                <img class="damage" src="/assets/itemSlider/gem_socket_square.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="gears_info_container">
+        <div class="arrow_svg rotate" (click)="handleDecrement()">
+            <svg-icon name="arrow_right"></svg-icon>
+        </div>
+
+        <div class="info">
+            <div class="name">
+                {{swords[currentSword].name}}
+            </div>
+            <div class="type">
+                {{swords[currentSword].type}}
+            </div>
+        </div>
+
+        <div class="arrow_svg" (click)="handleIncrement()">
+            <svg-icon name="arrow_right"></svg-icon>
+        </div>
+    </div>
+
+
 </div>

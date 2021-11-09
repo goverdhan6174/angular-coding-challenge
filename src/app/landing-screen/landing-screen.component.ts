@@ -7,7 +7,7 @@ import { ButtonOptions } from '../global/button/button.component';
   styleUrls: ['./landing-screen.component.scss']
 })
 export class LandingScreenComponent implements OnInit {
-    public pveButton: ButtonOptions = {
+  public pveButton: ButtonOptions = {
     href: "/random",
     disabled: false,
     type: { pictured: { path: "/assets/landing/button_pve_wip.png", content: { text: "Quest", fontSize: "24px" } } }
@@ -19,9 +19,16 @@ export class LandingScreenComponent implements OnInit {
     type: { pictured: { path: "/assets/landing/button_pvp_wip.png", content: { text: "Arena", fontSize: "24px" } } }
   }
 
+  showRear: boolean
+
   constructor() { }
 
   ngOnInit(): void {
+    this.showRear = false
+  }
+
+  handleShowRear() {
+    this.showRear = !this.showRear
   }
 
 }

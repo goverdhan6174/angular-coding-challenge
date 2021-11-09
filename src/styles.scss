@@ -4,6 +4,18 @@
   src: local("Neris"), url(./assets/fonts/Neris-SemiBold.otf) format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Magra&display=swap");
 
+*,
+:root {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}

@@ -13,14 +13,16 @@
     LEVEL 12
 </p>
 <div class="lower_wrapper">
-    <div class="black_gradient_bar">
+    <div class="black_gradient_bar" *ngIf="showRear; else itemsSlider">
         <div class="black_gradient_bar_overflow"></div>
         <div class="buttonWrapper">
-            <app-button [buttonOptions]="pveButton"></app-button>
-            <app-button [buttonOptions]="pvpButton"></app-button>
+            <app-button [buttonOptions]="pveButton" (click)="handleShowRear()"></app-button>
+            <app-button [buttonOptions]="pvpButton" (click)="handleShowRear()"></app-button>
         </div>
     </div>
+    <ng-template #itemsSlider>
+        <app-item-slider></app-item-slider>
+    </ng-template>
 </div>
 
 <app-navbar [currentPage]="'landing'"></app-navbar>
-
